@@ -62,7 +62,16 @@
         <div
           class="d-flex justify-content-between align-items-center flex-wrap gap-3"
         >
-          <p class="copyright">© 2026 BÍCH HUỆ — CODE BY HieuDEV.</p>
+          <p class="copyright">
+            © 2026 BÍCH HUỆ — CODE BY
+            <a
+              href="https://zalo.me/0332654198"
+              target="_blank"
+              class="zalo-link"
+            >
+              HieuDEV </a
+            >.
+          </p>
           <div class="legal-links">
             <span class="location-stamp">TAIPEI / TAIWAN</span>
             <span class="divider-dot"></span>
@@ -294,5 +303,32 @@
     align-items: center;
     justify-content: center;
   }
+}
+
+.zalo-link {
+  color: #c5a059; /* vàng luxury */
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  transition: 0.3s;
+}
+
+.zalo-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 1px;
+  background: #c5a059;
+  transition: 0.3s;
+}
+
+.zalo-link:hover {
+  color: #fff;
+}
+
+.zalo-link:hover::after {
+  width: 100%;
 }
 </style>
