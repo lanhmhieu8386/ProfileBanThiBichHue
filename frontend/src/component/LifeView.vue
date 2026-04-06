@@ -41,7 +41,7 @@ const images = [
 onMounted(() => {
   interval = setInterval(() => {
     currentIndex.value = (currentIndex.value + 1) % images.length;
-  }, 3000); // đổi mỗi 3s
+  }, 1000); // đổi mỗi 3s
 });
 
 onUnmounted(() => {
